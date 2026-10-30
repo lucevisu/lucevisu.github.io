@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hành trình xây dựng website Portfolio cá nhân | Lê Vủ Lực</title>
+  <meta name="description" content="Chia sẻ về lý do, quá trình chọn lựa công nghệ và các bước xây dựng website cá nhân tĩnh nhưng mạnh mẽ với GitHub Pages.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%238b5cf6'/><text x='50%' y='55%' font-size='50' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>VL</text></svg>">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Lê Vủ Lực</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu điều hướng" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="./index.html" class="nav-link">Trang chủ</a></li>
+          <li><a href="./about.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="./projects.html" class="nav-link">Dự án</a></li>
+          <li><a href="./blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main class="main-content">
+    <div class="container post-detail">
+      <article>
+        <!-- Post Header -->
+        <header class="post-header">
+          <div style="margin-bottom: 1rem;">
+            <a href="./blog.html" class="btn btn-outline btn-sm">
+              ← Quay lại danh sách Blog
+            </a>
+          </div>
+          
+          <div class="badge-pill">
+            <span>Bài viết</span>
+          </div>
+
+          <h1>Hành trình xây dựng website Portfolio cá nhân với GitHub Pages</h1>
+          
+          <div class="blog-meta">
+            <span class="blog-date">📅 30/10/2026</span>
+            <span>•</span>
+            <span>✍️ Tác giả: Lê Vủ Lực</span>
+            <span>•</span>
+            <span>📁 Lập trình Web</span>
+          </div>
+        </header>
+
+        <!-- Post Body Content -->
+        <div class="post-content">
+          <p>
+            Chào mừng bạn đến với bài viết đầu tiên trên blog cá nhân của mình! 
+          </p>
+          <p>
+            Trong bài viết này, mình sẽ chia sẻ ngắn gọn về hành trình tạo ra trang web Portfolio này, vì sao mình lựa chọn công nghệ tĩnh (Static Site) và những kinh nghiệm rút ra được.
+          </p>
+
+          <h2>1. Tại sao mỗi lập trình viên nên có một Portfolio?</h2>
+          <p>
+            Khi học tập và phát triển trong ngành Công nghệ thông tin, chúng ta thường làm nhiều bài tập, đồ án và dự án thực tế. Tuy nhiên, nếu chỉ lưu trữ mã nguồn trong máy tính cá nhân hay trên GitHub mà không có một nơi tổng hợp trực quan thì:
+          </p>
+          <ul>
+            <li>Nhà tuyển dụng khó hình dung được các kỹ năng và sản phẩm bạn đã làm.</li>
+            <li>Bản thân bạn cũng thiếu một không gian riêng để ghi chép lại những bài học bổ ích.</li>
+          </ul>
+          <p>
+            Do đó, một website cá nhân là cầu nối tuyệt vời để giới thiệu năng lực và định hình phong cách làm việc của bạn.
+          </p>
+
+          <h2>2. Vì sao lựa chọn GitHub Pages?</h2>
+          <p>
+            Có rất nhiều công cụ để làm website hiện nay (WordPress, React/Next.js, Vue...), nhưng đối với Portfolio cá nhân, mình chọn <strong>HTML/CSS/JS thuần kết hợp cùng GitHub Pages</strong> vì các ưu điểm vượt trội:
+          </p>
+          <ul>
+            <li><strong>Hoàn toàn miễn phí:</strong> GitHub Pages hỗ trợ hosting trực tiếp từ repository GitHub mà không mất chi phí duy trì hàng tháng.</li>
+            <li><strong>Tối ưu tốc độ tải trang:</strong> Trang web tĩnh thuần HTML/CSS/JS tải cực nhanh, không phụ thuộc vào cơ sở dữ liệu nặng nề hay máy chủ phức tạp.</li>
+            <li><strong>Dễ dàng quản lý phiên bản với Git:</strong> Mọi thay đổi về nội dung, bài viết hay thiết kế đều được lưu vết qua các lần commit.</li>
+          </ul>
+
+          <pre><code># Quy trình cập nhật bài viết mới cực kỳ nhanh chóng:
+git add .
+git commit -m "Thêm bài viết mới"
+git push origin main</code></pre>
+
+          <h2>3. Các kỹ năng và công nghệ đã áp dụng</h2>
+          <p>
+            Trong dự án này, mình đã kết hợp các kiến thức nền tảng:
+          </p>
+          <ul>
+            <li><strong>HTML5 & CSS3:</strong> Thiết kế giao diện Dark Mode với dải màu gradient tím - xanh dương hiện đại.</li>
+            <li><strong>Responsive Web Design:</strong> Tương thích hoàn hảo trên cả máy tính bàn, tablet và điện thoại di động.</li>
+            <li><strong>JavaScript ES6:</strong> Xử lý đóng/mở menu trên điện thoại và tương tác biểu mẫu liên hệ.</li>
+          </ul>
+
+          <h2>4. Kế hoạch tiếp theo</h2>
+          <p>Trong thời gian tới, mình sẽ tiếp tục:</p>
+          <ol>
+            <li>Cập nhật thêm các dự án mới đã thực hiện trong quá trình học tập (ASP.NET Core, C#, MySQL).</li>
+            <li>Viết thêm các bài viết chia sẻ về kỹ thuật lập trình và thủ thuật giải quyết lỗi.</li>
+            <li>Tinh chỉnh hiệu năng và trải nghiệm người dùng trên trang web.</li>
+          </ol>
+
+          <p>
+            Cảm ơn bạn đã ghé thăm và đọc bài viết! Nếu bạn có góp ý hay muốn kết nối trao đổi, đừng ngần ngại gửi tin nhắn qua trang <a href="./contact.html">Liên hệ</a> nhé.
+          </p>
+        </div>
+
+        <!-- Post Footer -->
+        <div style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <a href="./blog.html" class="btn btn-primary">
+            ← Khám phá thêm bài viết
+          </a>
+          <a href="./contact.html" class="btn btn-outline">
+            Liên hệ tác giả
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="./index.html" class="brand-logo">
+            <span class="brand-dot"></span>
+            <span>Lê Vủ Lực</span>
+          </a>
+          <p class="footer-desc">
+            Sinh viên Công nghệ thông tin đam mê lập trình, xây dựng website và khám phá các giải pháp công nghệ hiện đại.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Điều hướng nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./about.html">Giới thiệu bản thân</a></li>
+            <li><a href="./projects.html">Dự án đã làm</a></li>
+            <li><a href="./blog.html">Bài viết & Chia sẻ</a></li>
+            <li><a href="./contact.html">Liên hệ hợp tác</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kết nối</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/lucevisu" target="_blank" rel="noopener noreferrer">GitHub (@lucevisu)</a></li>
+            <li><a href="mailto:your-email@example.com">Email liên hệ</a></li>
+            <li><a href="./contact.html">Để lại lời nhắn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lê Vủ Lực. All rights reserved.</p>
+        <p>Được xây dựng với HTML, CSS, JavaScript, Markdown & GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

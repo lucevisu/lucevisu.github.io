@@ -1,105 +1,190 @@
----
-layout: default
-title: "Trang chủ"
----
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trang chủ | Lê Vủ Lực - Portfolio</title>
+  <meta name="description" content="Website Portfolio cá nhân của Lê Vủ Lực - Sinh viên Công nghệ thông tin, đam mê lập trình và phát triển website.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%238b5cf6'/><text x='50%' y='55%' font-size='50' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>VL</text></svg>">
+</head>
+<body>
 
-<div class="container">
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="badge-pill">
-        <span>👋 Xin chào! Tôi là</span>
-      </div>
-      
-      <h1>
-        <span class="gradient-text">Lê Vủ Lực</span>
-      </h1>
-      
-      <p class="hero-subtitle">
-        Sinh viên <strong>Công nghệ thông tin</strong> với niềm đam mê sâu sắc về lập trình, phát triển các giải pháp website hiệu quả và khám phá các công nghệ tiên tiến.
-      </p>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Lê Vủ Lực</span>
+      </a>
 
-      <div class="hero-actions">
-        <a href="{{ '/projects.html' | relative_url }}" class="btn btn-primary">
-          Xem các dự án của tôi →
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu điều hướng" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="./index.html" class="nav-link active">Trang chủ</a></li>
+          <li><a href="./about.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="./projects.html" class="nav-link">Dự án</a></li>
+          <li><a href="./blog.html" class="nav-link">Blog</a></li>
+          <li><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span>👋 Xin chào! Tôi là</span>
+          </div>
+          
+          <h1>
+            <span class="gradient-text">Lê Vủ Lực</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Sinh viên <strong>Công nghệ thông tin</strong> với niềm đam mê sâu sắc về lập trình, phát triển các giải pháp website hiệu quả và khám phá các công nghệ tiên tiến.
+          </p>
+
+          <div class="hero-actions">
+            <a href="./projects.html" class="btn btn-primary">
+              Xem các dự án của tôi →
+            </a>
+            <a href="./contact.html" class="btn btn-outline">
+              Liên hệ hợp tác
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-inner">
+              <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Lê Vủ Lực</span>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0.25rem 0 0;">Web Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Highlights / Lĩnh vực quan tâm -->
+      <section style="margin-top: 1rem;">
+        <div class="section-title-wrap">
+          <div class="badge-pill">
+            <span>Lĩnh vực quan tâm</span>
+          </div>
+          <h2>Định hướng & Đam mê</h2>
+          <p>Tôi luôn nỗ lực trau dồi kiến thức mới để tạo ra các sản phẩm công nghệ có giá trị thực tiễn cao.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="card highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Phát triển Website</h3>
+            <p>Xây dựng giao diện web trực quan, thân thiện với người dùng và tối ưu hiển thị trên mọi thiết bị máy tính, điện thoại.</p>
+          </div>
+
+          <div class="card highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Lập trình Hệ thống & Backend</h3>
+            <p>Tìm hiểu và thực hành với C#, ASP.NET Core và hệ quản trị cơ sở dữ liệu MySQL nhằm xử lý dữ liệu tin cậy, bảo mật.</p>
+          </div>
+
+          <div class="card highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <h3>Học hỏi & Đổi mới</h3>
+            <p>Chủ động nghiên cứu các công nghệ hiện đại, công cụ tối ưu quy trình làm việc và rèn luyện tư duy giải quyết vấn đề.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section style="margin: 3rem 0; text-align: center;" class="card">
+        <h2 style="margin-bottom: 0.75rem;">Sẵn sàng hợp tác hoặc cùng trao đổi học tập?</h2>
+        <p style="max-width: 580px; margin: 0 auto 1.75rem;">
+          Tôi luôn cởi mở đón nhận các cơ hội mới, đóng góp vào các dự án mở hoặc thảo luận về giải pháp công nghệ.
+        </p>
+        <a href="./contact.html" class="btn btn-primary">
+          Gửi tin nhắn cho tôi ngay
         </a>
-        <a href="{{ '/contact.html' | relative_url }}" class="btn btn-outline">
-          Liên hệ hợp tác
-        </a>
-      </div>
+      </section>
     </div>
+  </main>
 
-    <div class="hero-visual">
-      <div class="avatar-wrapper">
-        <div class="avatar-inner">
-          <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-            <circle cx="12" cy="7" r="4"></circle>
-          </svg>
-          <span>Lê Vủ Lực</span>
-          <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0.25rem 0 0;">Web Developer</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="./index.html" class="brand-logo">
+            <span class="brand-dot"></span>
+            <span>Lê Vủ Lực</span>
+          </a>
+          <p class="footer-desc">
+            Sinh viên Công nghệ thông tin đam mê lập trình, xây dựng website và khám phá các giải pháp công nghệ hiện đại.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Điều hướng nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./about.html">Giới thiệu bản thân</a></li>
+            <li><a href="./projects.html">Dự án đã làm</a></li>
+            <li><a href="./blog.html">Bài viết & Chia sẻ</a></li>
+            <li><a href="./contact.html">Liên hệ hợp tác</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kết nối</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/lucevisu" target="_blank" rel="noopener noreferrer">GitHub (@lucevisu)</a></li>
+            <li><a href="mailto:your-email@example.com">Email liên hệ</a></li>
+            <li><a href="./contact.html">Để lại lời nhắn</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Highlights / Lĩnh vực quan tâm -->
-  <section style="margin-top: 1rem;">
-    <div class="section-title-wrap">
-      <div class="badge-pill">
-        <span>Lĩnh vực quan tâm</span>
-      </div>
-      <h2>Định hướng & Đam mê</h2>
-      <p>Tôi luôn nỗ lực trau dồi kiến thức mới để tạo ra các sản phẩm công nghệ có giá trị thực tiễn cao.</p>
-    </div>
-
-    <div class="highlights-grid">
-      <div class="card highlight-card">
-        <div class="highlight-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
-          </svg>
-        </div>
-        <h3>Phát triển Website</h3>
-        <p>Xây dựng giao diện web trực quan, thân thiện với người dùng và tối ưu hiển thị trên mọi thiết bị máy tính, điện thoại.</p>
-      </div>
-
-      <div class="card highlight-card">
-        <div class="highlight-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-            <line x1="6" y1="6" x2="6.01" y2="6"></line>
-            <line x1="6" y1="18" x2="6.01" y2="18"></line>
-          </svg>
-        </div>
-        <h3>Lập trình Hệ thống & Backend</h3>
-        <p>Tìm hiểu và thực hành với C#, ASP.NET Core và hệ quản trị cơ sở dữ liệu MySQL nhằm xử lý dữ liệu tin cậy, bảo mật.</p>
-      </div>
-
-      <div class="card highlight-card">
-        <div class="highlight-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="16" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12.01" y2="8"></line>
-          </svg>
-        </div>
-        <h3>Học hỏi & Đổi mới</h3>
-        <p>Chủ động nghiên cứu các công nghệ hiện đại, công cụ tối ưu quy trình làm việc và rèn luyện tư duy giải quyết vấn đề.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lê Vủ Lực. All rights reserved.</p>
+        <p>Được xây dựng với HTML, CSS, JavaScript, Markdown & GitHub Pages.</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- CTA Banner -->
-  <section style="margin: 3rem 0; text-align: center;" class="card">
-    <h2 style="margin-bottom: 0.75rem;">Sẵn sàng hợp tác hoặc cùng trao đổi học tập?</h2>
-    <p style="max-width: 580px; margin: 0 auto 1.75rem;">
-      Tôi luôn cởi mở đón nhận các cơ hội mới, đóng góp vào các dự án mở hoặc thảo luận về giải pháp công nghệ.
-    </p>
-    <a href="{{ '/contact.html' | relative_url }}" class="btn btn-primary">
-      Gửi tin nhắn cho tôi ngay
-    </a>
-  </section>
-</div>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

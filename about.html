@@ -1,132 +1,217 @@
----
-layout: default
-title: "Giới thiệu"
----
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Giới thiệu | Lê Vủ Lực - Portfolio</title>
+  <meta name="description" content="Tìm hiểu thêm về quá trình học tập, kỹ năng và định hướng nghề nghiệp của Lê Vủ Lực.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%238b5cf6'/><text x='50%' y='55%' font-size='50' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>VL</text></svg>">
+</head>
+<body>
 
-<div class="container">
-  <!-- Header Phần About -->
-  <div class="section-title-wrap" style="text-align: left; max-width: 100%;">
-    <div class="badge-pill">
-      <span>Về bản thân</span>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Lê Vủ Lực</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu điều hướng" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="./index.html" class="nav-link">Trang chủ</a></li>
+          <li><a href="./about.html" class="nav-link active">Giới thiệu</a></li>
+          <li><a href="./projects.html" class="nav-link">Dự án</a></li>
+          <li><a href="./blog.html" class="nav-link">Blog</a></li>
+          <li><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
     </div>
-    <h1>Tìm hiểu thêm về <span class="gradient-text">Lê Vủ Lực</span></h1>
-    <p>Hành trình học tập, đam mê công nghệ và những giá trị tôi luôn hướng tới.</p>
-  </div>
+  </header>
 
-  <!-- Thông tin chi tiết & Định hướng -->
-  <div class="about-grid">
-    <div class="card">
-      <h3 style="margin-bottom: 1rem; color: var(--accent-blue-light);">Quá trình học tập & Đam mê</h3>
-      <p>
-        Hiện tại, tôi đang là sinh viên chuyên ngành <strong>Công nghệ thông tin</strong>. Ngay từ những ngày đầu tiếp xúc với những dòng lệnh lập trình, tôi đã bị cuốn hút bởi khả năng biến những ý tưởng logic trừu tượng thành những ứng dụng cụ thể có thể phục vụ người dùng.
-      </p>
-      <p>
-        Tôi dành nhiều thời gian để thực hành, tự xây dựng các dự án mẫu và tìm hiểu nguyên lý hoạt động của các hệ thống phần mềm từ giao diện (Frontend) đến tầng xử lý dữ liệu (Backend).
-      </p>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-bottom: 1rem; color: var(--accent-purple-light);">Sở thích & Định hướng tương lai</h3>
-      <p>
-        <strong>Sở thích:</strong> Ngoài thời gian học tập và code, tôi thích đọc tài liệu công nghệ, tìm hiểu các giải pháp mã nguồn mở và trao đổi kỹ thuật cùng bạn bè có cùng niềm đam mê.
-      </p>
-      <p>
-        <strong>Định hướng nghề nghiệp:</strong> Trở thành một <strong>Full-stack Web Developer</strong> chuyên nghiệp, có khả năng xây dựng các hệ thống web an toàn, hiệu năng cao và mang lại trải nghiệm tối ưu cho người sử dụng.
-      </p>
-    </div>
-  </div>
-
-  <!-- Kỹ năng chuyên môn -->
-  <section class="skills-section">
-    <div class="section-title-wrap">
-      <div class="badge-pill">
-        <span>Kỹ năng công nghệ</span>
+  <!-- Main Body Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Header Phần About -->
+      <div class="section-title-wrap" style="text-align: left; max-width: 100%;">
+        <div class="badge-pill">
+          <span>Về bản thân</span>
+        </div>
+        <h1>Tìm hiểu thêm về <span class="gradient-text">Lê Vủ Lực</span></h1>
+        <p>Hành trình học tập, đam mê công nghệ và những giá trị tôi luôn hướng tới.</p>
       </div>
-      <h2>Công nghệ & Kỹ năng cốt lõi</h2>
-      <p>Những ngôn ngữ, framework và cơ sở dữ liệu tôi đã và đang sử dụng thường xuyên.</p>
-    </div>
 
-    <div class="skills-grid">
-      <!-- HTML5 -->
-      <div class="card skill-card">
-        <div class="skill-icon">H5</div>
-        <div class="skill-info">
-          <h4>HTML5</h4>
-          <span>Cấu trúc chuẩn ngữ nghĩa & SEO</span>
+      <!-- Thông tin chi tiết & Định hướng -->
+      <div class="about-grid">
+        <div class="card">
+          <h3 style="margin-bottom: 1rem; color: var(--accent-blue-light);">Quá trình học tập & Đam mê</h3>
+          <p>
+            Hiện tại, tôi đang là sinh viên chuyên ngành <strong>Công nghệ thông tin</strong>. Ngay từ những ngày đầu tiếp xúc với những dòng lệnh lập trình, tôi đã bị cuốn hút bởi khả năng biến những ý tưởng logic trừu tượng thành những ứng dụng cụ thể có thể phục vụ người dùng.
+          </p>
+          <p>
+            Tôi dành nhiều thời gian để thực hành, tự xây dựng các dự án mẫu và tìm hiểu nguyên lý hoạt động của các hệ thống phần mềm từ giao diện (Frontend) đến tầng xử lý dữ liệu (Backend).
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 1rem; color: var(--accent-purple-light);">Sở thích & Định hướng tương lai</h3>
+          <p>
+            <strong>Sở thích:</strong> Ngoài thời gian học tập và code, tôi thích đọc tài liệu công nghệ, tìm hiểu các giải pháp mã nguồn mở và trao đổi kỹ thuật cùng bạn bè có cùng niềm đam mê.
+          </p>
+          <p>
+            <strong>Định hướng nghề nghiệp:</strong> Trở thành một <strong>Full-stack Web Developer</strong> chuyên nghiệp, có khả năng xây dựng các hệ thống web an toàn, hiệu năng cao và mang lại trải nghiệm tối ưu cho người sử dụng.
+          </p>
         </div>
       </div>
 
-      <!-- CSS3 -->
-      <div class="card skill-card">
-        <div class="skill-icon">C3</div>
-        <div class="skill-info">
-          <h4>CSS3</h4>
-          <span>Responsive, Flexbox & Grid</span>
+      <!-- Kỹ năng chuyên môn -->
+      <section class="skills-section">
+        <div class="section-title-wrap">
+          <div class="badge-pill">
+            <span>Kỹ năng công nghệ</span>
+          </div>
+          <h2>Công nghệ & Kỹ năng cốt lõi</h2>
+          <p>Những ngôn ngữ, framework và cơ sở dữ liệu tôi đã và đang sử dụng thường xuyên.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- HTML5 -->
+          <div class="card skill-card">
+            <div class="skill-icon">H5</div>
+            <div class="skill-info">
+              <h4>HTML5</h4>
+              <span>Cấu trúc chuẩn ngữ nghĩa & SEO</span>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="card skill-card">
+            <div class="skill-icon">C3</div>
+            <div class="skill-info">
+              <h4>CSS3</h4>
+              <span>Responsive, Flexbox & Grid</span>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="card skill-card">
+            <div class="skill-icon">JS</div>
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+              <span>DOM, ES6+ & Tương tác động</span>
+            </div>
+          </div>
+
+          <!-- C# -->
+          <div class="card skill-card">
+            <div class="skill-icon">C#</div>
+            <div class="skill-info">
+              <h4>C#</h4>
+              <span>Lập trình hướng đối tượng (OOP)</span>
+            </div>
+          </div>
+
+          <!-- ASP.NET Core -->
+          <div class="card skill-card">
+            <div class="skill-icon">.NET</div>
+            <div class="skill-info">
+              <h4>ASP.NET Core</h4>
+              <span>Xây dựng Backend & Web API</span>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div class="card skill-card">
+            <div class="skill-icon">SQL</div>
+            <div class="skill-info">
+              <h4>MySQL</h4>
+              <span>Thiết kế CSDL & Tối ưu truy vấn</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trích dẫn tích cực -->
+      <section class="quotes-section">
+        <div class="section-title-wrap">
+          <div class="badge-pill">
+            <span>Châm ngôn & Động lực</span>
+          </div>
+          <h2>Những câu nói truyền cảm hứng</h2>
+        </div>
+
+        <div class="quotes-grid">
+          <div class="quote-card">
+            <p>"Không có bí quyết nào cho sự thành công, đó là kết quả của sự chuẩn bị, làm việc chăm chỉ và học hỏi từ những thất bại."</p>
+            <span>— Colin Powell</span>
+          </div>
+
+          <div class="quote-card">
+            <p>"Mọi người trong chúng ta nên học cách lập trình máy tính, bởi vì nó dạy bạn cách tư duy."</p>
+            <span>— Steve Jobs</span>
+          </div>
+
+          <div class="quote-card">
+            <p>"Hành trình vạn dặm luôn bắt đầu bằng một bước chân đầu tiên."</p>
+            <span>— Lão Tử</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="./index.html" class="brand-logo">
+            <span class="brand-dot"></span>
+            <span>Lê Vủ Lực</span>
+          </a>
+          <p class="footer-desc">
+            Sinh viên Công nghệ thông tin đam mê lập trình, xây dựng website và khám phá các giải pháp công nghệ hiện đại.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Điều hướng nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./about.html">Giới thiệu bản thân</a></li>
+            <li><a href="./projects.html">Dự án đã làm</a></li>
+            <li><a href="./blog.html">Bài viết & Chia sẻ</a></li>
+            <li><a href="./contact.html">Liên hệ hợp tác</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kết nối</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/lucevisu" target="_blank" rel="noopener noreferrer">GitHub (@lucevisu)</a></li>
+            <li><a href="mailto:your-email@example.com">Email liên hệ</a></li>
+            <li><a href="./contact.html">Để lại lời nhắn</a></li>
+          </ul>
         </div>
       </div>
 
-      <!-- JavaScript -->
-      <div class="card skill-card">
-        <div class="skill-icon">JS</div>
-        <div class="skill-info">
-          <h4>JavaScript</h4>
-          <span>DOM, ES6+ & Tương tác động</span>
-        </div>
-      </div>
-
-      <!-- C# -->
-      <div class="card skill-card">
-        <div class="skill-icon">C#</div>
-        <div class="skill-info">
-          <h4>C#</h4>
-          <span>Lập trình hướng đối tượng (OOP)</span>
-        </div>
-      </div>
-
-      <!-- ASP.NET Core -->
-      <div class="card skill-card">
-        <div class="skill-icon">.NET</div>
-        <div class="skill-info">
-          <h4>ASP.NET Core</h4>
-          <span>Xây dựng Backend & Web API</span>
-        </div>
-      </div>
-
-      <!-- MySQL -->
-      <div class="card skill-card">
-        <div class="skill-icon">SQL</div>
-        <div class="skill-info">
-          <h4>MySQL</h4>
-          <span>Thiết kế CSDL & Tối ưu truy vấn</span>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lê Vủ Lực. All rights reserved.</p>
+        <p>Được xây dựng với HTML, CSS, JavaScript, Markdown & GitHub Pages.</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- Trích dẫn tích cực -->
-  <section class="quotes-section">
-    <div class="section-title-wrap">
-      <div class="badge-pill">
-        <span>Châm ngôn & Động lực</span>
-      </div>
-      <h2>Những câu nói truyền cảm hứng</h2>
-    </div>
-
-    <div class="quotes-grid">
-      <div class="quote-card">
-        <p>"Không có bí quyết nào cho sự thành công, đó là kết quả của sự chuẩn bị, làm việc chăm chỉ và học hỏi từ những thất bại."</p>
-        <span>— Colin Powell</span>
-      </div>
-
-      <div class="quote-card">
-        <p>"Mọi người trong chúng ta nên học cách lập trình máy tính, bởi vì nó dạy bạn cách tư duy."</p>
-        <span>— Steve Jobs</span>
-      </div>
-
-      <div class="quote-card">
-        <p>"Hành trình vạn dặm luôn bắt đầu bằng một bước chân đầu tiên."</p>
-        <span>— Lão Tử</span>
-      </div>
-    </div>
-  </section>
-</div>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

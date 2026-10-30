@@ -1,51 +1,126 @@
----
-layout: default
-title: "Blog"
----
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog | Lê Vủ Lực - Portfolio</title>
+  <meta name="description" content="Nơi chia sẻ kiến thức, kinh nghiệm lập trình và hành trình học tập CNTT của Lê Vủ Lực.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%238b5cf6'/><text x='50%' y='55%' font-size='50' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>VL</text></svg>">
+</head>
+<body>
 
-<div class="container">
-  <div class="section-title-wrap" style="text-align: left; max-width: 100%;">
-    <div class="badge-pill">
-      <span>Góc chia sẻ</span>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Lê Vủ Lực</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu điều hướng" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="./index.html" class="nav-link">Trang chủ</a></li>
+          <li><a href="./about.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="./projects.html" class="nav-link">Dự án</a></li>
+          <li><a href="./blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
     </div>
-    <h1>Bài viết & <span class="gradient-text">Kiến thức</span></h1>
-    <p>Nơi ghi lại kinh nghiệm lập trình, những bài học công nghệ và hành trình phát triển bản thân.</p>
-  </div>
+  </header>
 
-  <div class="blog-list">
-    {% for post in site.posts %}
-    <article class="card blog-card">
-      <div class="blog-meta">
-        <span class="blog-date">📅 {{ post.date | date: "%d/%m/%Y" }}</span>
-        {% if post.category %}
-        <span>•</span>
-        <span>📁 {{ post.category }}</span>
-        {% endif %}
+  <!-- Main Body Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="section-title-wrap" style="text-align: left; max-width: 100%;">
+        <div class="badge-pill">
+          <span>Góc chia sẻ</span>
+        </div>
+        <h1>Bài viết & <span class="gradient-text">Kiến thức</span></h1>
+        <p>Nơi ghi lại kinh nghiệm lập trình, những bài học công nghệ và hành trình phát triển bản thân.</p>
       </div>
 
-      <h2 class="blog-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
+      <div class="blog-list">
+        <!-- Bài viết 1 -->
+        <article class="card blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">📅 30/10/2026</span>
+            <span>•</span>
+            <span>📁 Lập trình Web</span>
+            <span>•</span>
+            <span>✍️ Tác giả: Lê Vủ Lực</span>
+          </div>
 
-      <p class="blog-excerpt">
-        {% if post.excerpt %}
-          {{ post.excerpt | strip_html | truncatewords: 40 }}
-        {% else %}
-          {{ post.content | strip_html | truncatewords: 40 }}
-        {% endif %}
-      </p>
+          <h2 class="blog-title">
+            <a href="./bai-viet-dau-tien.html">Hành trình xây dựng website Portfolio cá nhân với GitHub Pages</a>
+          </h2>
 
-      <div>
-        <a href="{{ post.url | relative_url }}" class="btn btn-outline btn-sm">
-          Đọc tiếp bài viết →
-        </a>
+          <p class="blog-excerpt">
+            Chia sẻ về lý do, quá trình chọn lựa công nghệ và các bước xây dựng website cá nhân tĩnh nhưng mạnh mẽ, tối ưu tốc độ và triển khai miễn phí trên GitHub Pages.
+          </p>
+
+          <div>
+            <a href="./bai-viet-dau-tien.html" class="btn btn-outline btn-sm">
+              Đọc tiếp bài viết →
+            </a>
+          </div>
+        </article>
       </div>
-    </article>
-    {% else %}
-    <div class="card" style="text-align: center; padding: 3rem;">
-      <p style="color: var(--text-muted); margin-bottom: 1rem;">Chưa có bài viết nào được đăng tải.</p>
-      <p style="font-size: 0.9rem;">Hãy thêm bài viết mới vào thư mục <code>_posts/</code> theo định dạng <code>YYYY-MM-DD-tieu-de.md</code>.</p>
     </div>
-    {% endfor %}
-  </div>
-</div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="./index.html" class="brand-logo">
+            <span class="brand-dot"></span>
+            <span>Lê Vủ Lực</span>
+          </a>
+          <p class="footer-desc">
+            Sinh viên Công nghệ thông tin đam mê lập trình, xây dựng website và khám phá các giải pháp công nghệ hiện đại.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Điều hướng nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./about.html">Giới thiệu bản thân</a></li>
+            <li><a href="./projects.html">Dự án đã làm</a></li>
+            <li><a href="./blog.html">Bài viết & Chia sẻ</a></li>
+            <li><a href="./contact.html">Liên hệ hợp tác</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kết nối</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/lucevisu" target="_blank" rel="noopener noreferrer">GitHub (@lucevisu)</a></li>
+            <li><a href="mailto:your-email@example.com">Email liên hệ</a></li>
+            <li><a href="./contact.html">Để lại lời nhắn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lê Vủ Lực. All rights reserved.</p>
+        <p>Được xây dựng với HTML, CSS, JavaScript, Markdown & GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

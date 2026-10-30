@@ -1,120 +1,205 @@
----
-layout: default
-title: "Liên hệ"
----
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Liên hệ | Lê Vủ Lực - Portfolio</title>
+  <meta name="description" content="Liên hệ và kết nối với Lê Vủ Lực - Sinh viên CNTT & Web Developer.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%238b5cf6'/><text x='50%' y='55%' font-size='50' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>VL</text></svg>">
+</head>
+<body>
 
-<div class="container">
-  <div class="section-title-wrap" style="text-align: left; max-width: 100%;">
-    <div class="badge-pill">
-      <span>Kết nối & Hợp tác</span>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Lê Vủ Lực</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu điều hướng" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="./index.html" class="nav-link">Trang chủ</a></li>
+          <li><a href="./about.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="./projects.html" class="nav-link">Dự án</a></li>
+          <li><a href="./blog.html" class="nav-link">Blog</a></li>
+          <li><a href="./contact.html" class="nav-link active">Liên hệ</a></li>
+        </ul>
+      </nav>
     </div>
-    <h1>Liên hệ với <span class="gradient-text">Lê Vủ Lực</span></h1>
-    <p>Bạn có câu hỏi, đề xuất dự án hoặc muốn trao đổi về lập trình? Hãy để lại lời nhắn bên dưới!</p>
-  </div>
+  </header>
 
-  <div class="contact-grid">
-    <!-- Cột Thông tin liên hệ -->
-    <div>
-      <div class="card" style="height: 100%;">
-        <h3 style="margin-bottom: 1rem; color: var(--accent-blue-light);">Thông tin kết nối</h3>
-        <p style="margin-bottom: 2rem;">
-          Tôi luôn sẵn lòng lắng nghe và phản hồi email trong thời gian sớm nhất.
-        </p>
+  <!-- Main Body Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="section-title-wrap" style="text-align: left; max-width: 100%;">
+        <div class="badge-pill">
+          <span>Kết nối & Hợp tác</span>
+        </div>
+        <h1>Liên hệ với <span class="gradient-text">Lê Vủ Lực</span></h1>
+        <p>Bạn có câu hỏi, đề xuất dự án hoặc muốn trao đổi về lập trình? Hãy để lại lời nhắn bên dưới!</p>
+      </div>
 
-        <div class="contact-info-list">
-          <!-- Email -->
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
+      <div class="contact-grid">
+        <!-- Cột Thông tin liên hệ -->
+        <div>
+          <div class="card" style="height: 100%;">
+            <h3 style="margin-bottom: 1rem; color: var(--accent-blue-light);">Thông tin kết nối</h3>
+            <p style="margin-bottom: 2rem;">
+              Tôi luôn sẵn lòng lắng nghe và phản hồi email trong thời gian sớm nhất.
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Hòm thư điện tử</span>
+                  <a href="mailto:your-email@example.com" style="color: var(--text-main); font-weight: 600;">
+                    your-email@example.com
+                  </a>
+                  <span style="display: block; font-size: 0.75rem; color: var(--accent-purple-light); margin-top: 2px;">
+                    *(Thay bằng email cá nhân của bạn)*
+                  </span>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Hồ sơ GitHub</span>
+                  <a href="https://github.com/lucevisu" target="_blank" rel="noopener noreferrer" style="color: var(--text-main); font-weight: 600;">
+                    github.com/lucevisu ↗
+                  </a>
+                </div>
+              </div>
+
+              <!-- Vị trí -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Khu vực sinh sống</span>
+                  <span style="color: var(--text-main); font-weight: 600;">Việt Nam</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Hòm thư điện tử</span>
-              <a href="mailto:your-email@example.com" style="color: var(--text-main); font-weight: 600;">
-                your-email@example.com
+
+            <div style="margin-top: 2rem;">
+              <a href="mailto:your-email@example.com?subject=Lien%20he%20tu%20Portfolio" class="btn btn-outline" style="width: 100%;">
+                ✉️ Mở ứng dụng Email trực tiếp (mailto)
               </a>
-              <span style="display: block; font-size: 0.75rem; color: var(--accent-purple-light); margin-top: 2px;">
-                *(Vui lòng cập nhật email chính thức của bạn trong _config.yml)*
-              </span>
-            </div>
-          </div>
-
-          <!-- GitHub -->
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </div>
-            <div>
-              <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Hồ sơ GitHub</span>
-              <a href="https://github.com/lucevisu" target="_blank" rel="noopener noreferrer" style="color: var(--text-main); font-weight: 600;">
-                github.com/lucevisu ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Vị trí -->
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <div>
-              <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Khu vực sinh sống</span>
-              <span style="color: var(--text-main); font-weight: 600;">Việt Nam</span>
             </div>
           </div>
         </div>
 
-        <div style="margin-top: 2rem;">
-          <a href="mailto:your-email@example.com?subject=Lien%20he%20tu%20Portfolio" class="btn btn-outline" style="width: 100%;">
-            ✉️ Mở ứng dụng Email trực tiếp (mailto)
+        <!-- Cột Biểu mẫu gửi lời nhắn -->
+        <div>
+          <div class="card">
+            <h3 style="margin-bottom: 0.5rem; color: var(--accent-purple-light);">Gửi lời nhắn nhanh</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">
+              Điền thông tin vào mẫu bên dưới để tạo thư gửi nhanh:
+            </p>
+
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="senderName">Họ và tên *</label>
+                <input type="text" id="senderName" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail">Địa chỉ Email *</label>
+                <input type="email" id="senderEmail" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Chủ đề</label>
+                <input type="text" id="subject" class="form-control" placeholder="Chủ đề tin nhắn / Hợp tác dự án">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Nội dung tin nhắn *</label>
+                <textarea id="message" class="form-control" placeholder="Nhập nội dung bạn muốn gửi..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
+                Gửi tin nhắn ngay 🚀
+              </button>
+
+              <div id="formStatus" style="display: none; padding: 0.8rem; background: rgba(59, 130, 246, 0.15); border: 1px solid var(--accent-blue); border-radius: var(--radius-sm); font-size: 0.9rem; margin-top: 0.5rem;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="./index.html" class="brand-logo">
+            <span class="brand-dot"></span>
+            <span>Lê Vủ Lực</span>
           </a>
+          <p class="footer-desc">
+            Sinh viên Công nghệ thông tin đam mê lập trình, xây dựng website và khám phá các giải pháp công nghệ hiện đại.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Điều hướng nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./about.html">Giới thiệu bản thân</a></li>
+            <li><a href="./projects.html">Dự án đã làm</a></li>
+            <li><a href="./blog.html">Bài viết & Chia sẻ</a></li>
+            <li><a href="./contact.html">Liên hệ hợp tác</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kết nối</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/lucevisu" target="_blank" rel="noopener noreferrer">GitHub (@lucevisu)</a></li>
+            <li><a href="mailto:your-email@example.com">Email liên hệ</a></li>
+            <li><a href="./contact.html">Để lại lời nhắn</a></li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    <!-- Cột Biểu mẫu gửi lời nhắn -->
-    <div>
-      <div class="card">
-        <h3 style="margin-bottom: 0.5rem; color: var(--accent-purple-light);">Gửi lời nhắn nhanh</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">
-          Điền thông tin vào mẫu bên dưới để tạo thư gửi nhanh:
-        </p>
-
-        <form id="contactForm" class="contact-form">
-          <div class="form-group">
-            <label for="senderName">Họ và tên *</label>
-            <input type="text" id="senderName" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required>
-          </div>
-
-          <div class="form-group">
-            <label for="senderEmail">Địa chỉ Email *</label>
-            <input type="email" id="senderEmail" class="form-control" placeholder="name@example.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Chủ đề</label>
-            <input type="text" id="subject" class="form-control" placeholder="Chủ đề tin nhắn / Hợp tác dự án">
-          </div>
-
-          <div class="form-group">
-            <label for="message">Nội dung tin nhắn *</label>
-            <textarea id="message" class="form-control" placeholder="Nhập nội dung bạn muốn gửi..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
-            Gửi tin nhắn ngay 🚀
-          </button>
-
-          <div id="formStatus" style="display: none; padding: 0.8rem; background: rgba(59, 130, 246, 0.15); border: 1px solid var(--accent-blue); border-radius: var(--radius-sm); font-size: 0.9rem; margin-top: 0.5rem;"></div>
-        </form>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lê Vủ Lực. All rights reserved.</p>
+        <p>Được xây dựng với HTML, CSS, JavaScript, Markdown & GitHub Pages.</p>
       </div>
     </div>
-  </div>
-</div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
