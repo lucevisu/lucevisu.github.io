@@ -1,0 +1,25 @@
+# Jekyll Configuration
+title: Lê Vủ Lực | Portfolio
+email: your-email@example.com
+description: >-
+  Website Portfolio cá nhân của Lê Vủ Lực - Sinh viên Công nghệ thông tin, đam mê lập trình, phát triển web và công nghệ mới.
+baseurl: "" # Để trống cho kho lưu trữ USERNAME.github.io
+url: "https://vulil.github.io"
+
+# Thông tin tác giả
+author:
+  name: Lê Vủ Lực
+  bio: Sinh viên Công nghệ thông tin | Web Developer
+  github: lucevisu
+  email: your-email@example.com
+
+# Cấu hình Markdown & Build
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title.html
+
+# Exclude list
+exclude:
+  - README.md
+  - plan.md
+  - .git
+  - .gitignore

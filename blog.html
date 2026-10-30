@@ -1,0 +1,51 @@
+---
+layout: default
+title: "Blog"
+---
+
+<div class="container">
+  <div class="section-title-wrap" style="text-align: left; max-width: 100%;">
+    <div class="badge-pill">
+      <span>Góc chia sẻ</span>
+    </div>
+    <h1>Bài viết & <span class="gradient-text">Kiến thức</span></h1>
+    <p>Nơi ghi lại kinh nghiệm lập trình, những bài học công nghệ và hành trình phát triển bản thân.</p>
+  </div>
+
+  <div class="blog-list">
+    {% for post in site.posts %}
+    <article class="card blog-card">
+      <div class="blog-meta">
+        <span class="blog-date">📅 {{ post.date | date: "%d/%m/%Y" }}</span>
+        {% if post.category %}
+        <span>•</span>
+        <span>📁 {{ post.category }}</span>
+        {% endif %}
+      </div>
+
+      <h2 class="blog-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+
+      <p class="blog-excerpt">
+        {% if post.excerpt %}
+          {{ post.excerpt | strip_html | truncatewords: 40 }}
+        {% else %}
+          {{ post.content | strip_html | truncatewords: 40 }}
+        {% endif %}
+      </p>
+
+      <div>
+        <a href="{{ post.url | relative_url }}" class="btn btn-outline btn-sm">
+          Đọc tiếp bài viết →
+        </a>
+      </div>
+    </article>
+    {% else %}
+    <div class="card" style="text-align: center; padding: 3rem;">
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">Chưa có bài viết nào được đăng tải.</p>
+      <p style="font-size: 0.9rem;">Hãy thêm bài viết mới vào thư mục <code>_posts/</code> theo định dạng <code>YYYY-MM-DD-tieu-de.md</code>.</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
